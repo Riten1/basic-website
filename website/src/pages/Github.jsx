@@ -16,5 +16,4 @@ const Github = () => {
     <div>GitHub Followers: {data.followers}</div>
   )
 }
-
 export default Github
