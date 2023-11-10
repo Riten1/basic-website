@@ -23,6 +23,7 @@ function App() {
           <Route path='user/:id' element={<User/>}/>
         </Route>
         <Route path='github' element={<Github/>}/>
+        <Route path='login' element={<Login />}/>
       </Route>
     )
   )
