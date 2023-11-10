@@ -1,19 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
 const Github = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState({});
 
   useEffect(() => {
-    fetch('https://api.github.com/users/Riten1')
-    .then((response) => response.json())
-    .then((res) => {setData(res)
-    console.log(data.followers)
-    }
-    )
-
-  }, [])
+    fetch("https://api.github.com/users/Riten1")
+      .then((response) => response.json())
+      .then((res) => {
+        setData(res);  
+      });
+  }, []);
   return (
-    <div>GitHub Followers: {data.followers}</div>
-  )
-}
-export default Github
+    <>
+      <div>Github Followers: {data.followers}</div>
+      <div>Github following: {data.following}</div>
+    </>
+  );
+};
+export default Github;
