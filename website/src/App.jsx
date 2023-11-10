@@ -25,18 +25,13 @@ function App() {
         </Route>
         <Route path='github' element={<Github/>}/>
         <Route path='login' element={<Login />}/>
+       
       </Route>
     )
   )
 
   return (
     <>
-    
-    {/*  */}
-    {/* <Routes>
-      
-
-    </Routes> */}
     <RouterProvider router={router} />
     </>
   )
