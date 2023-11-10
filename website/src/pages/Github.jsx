@@ -12,8 +12,8 @@ const Github = () => {
   }, []);
   return (
     <>
-      <div>Github Followers: {data.followers}</div>
-      <div>Github following: {data.following}</div>
+      <div className="text-center">Github Followers: {data.followers}</div>
+      <div className="text-center">Github following: {data.following}</div>
     </>
   );
 };

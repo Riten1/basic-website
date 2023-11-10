@@ -1,8 +1,7 @@
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
-import './App.css'
+
 import LayoutRoots from './layouts/LayoutRoots'
 import Home from './pages/Home'
-// import Aboutus from './pages/Aboutus'
 import ContactUs from './pages/ContactUs'
 import ContactLayout from './layouts/ContactLayout'
 import Help from './pages/Help'

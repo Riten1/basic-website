@@ -10,14 +10,17 @@ const Login = () => {
 
    function onSubmit(){
       setUser({userName, password})
+      setUsername('')
+      setPassword('')
+      submit=true
   }
-
+let submit = false
   return (
-    <div>
+    <div className='text-center'>
       <h1>Login</h1>
-      <input type='text' placeholder='Username' value={userName} onChange={(e) => {setUsername(e.target.value)}}></input>
-      <input type='text' placeholder='Password' value={password} onChange={(e) => {setPassword(e.target.value)}}></input>
-      <button onClick={onSubmit}>Submit</button>
+      <input className='border-2 rounded-sm' type='text' placeholder='Username' value={userName} onChange={(e) => {setUsername(e.target.value)}}></input>
+      <input className='border-2 rounded-sm' type='text' placeholder='Password' value={password} onChange={(e) => {setPassword(e.target.value)}}></input>
+      <button onClick={onSubmit}>{submit?'Submitted': 'Submit'}</button>
 
     </div>
   )

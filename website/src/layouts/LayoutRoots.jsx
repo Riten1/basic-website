@@ -8,7 +8,7 @@ const LayoutRoots = () => {
   return (
     <UserContextProvider value={{ user, setUser }}>
       <header >
-        <div className="w-full  flex items-center justify-between mx-auto">
+        <div className="w-full  flex items-center justify-between mx-auto p-10 ">
           <button>Logo</button>
           <ul className="flex gap-5">
             <li>
@@ -42,14 +42,6 @@ const LayoutRoots = () => {
                 About Us
               </NavLink>
             </li>{" "}
-            <NavLink
-              className={({ isActive }) => {
-                isActive ? "text-red-700" : `text-black`;
-              }}
-              to="aboutus"
-            >
-              About Us
-            </NavLink>
             <li>
               {" "}
               <NavLink to="github">GitHub</NavLink>
