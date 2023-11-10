@@ -7,7 +7,7 @@ const Github = () => {
     fetch("https://api.github.com/users/Riten1")
       .then((response) => response.json())
       .then((res) => {
-        setData(res);  
+        setData(res);
       });
   }, []);
   return (

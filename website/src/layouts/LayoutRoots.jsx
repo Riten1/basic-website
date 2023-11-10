@@ -7,7 +7,7 @@ const LayoutRoots = () => {
   const [user, setUser] = useState({});
   return (
     <UserContextProvider value={{ user, setUser }}>
-      <header >
+      <header>
         <div className="w-full  flex items-center justify-between mx-auto p-10 ">
           <button>Logo</button>
           <ul className="flex gap-5">
@@ -49,12 +49,10 @@ const LayoutRoots = () => {
           </ul>
 
           <NavLink to="login">Login</NavLink>
-        
         </div>
-
       </header>
       <div className="h-screen">
-      <Outlet />
+        <Outlet />
       </div>
     </UserContextProvider>
   );
