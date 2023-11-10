@@ -5,13 +5,13 @@ const ContactLayout = () => {
   return (
     <>
     <div className='text-center'>We are a qualified and experienced developers</div>
-    <div className='text-center'>
+    <div className='flex justify-center items-center gap-4'>
     <NavLink to='contactus'>Contact Us</NavLink>
     <NavLink to='help'>Help</NavLink>
     <NavLink to='user/:id'>User</NavLink>
-    <Outlet/>
+   
     </div>
-    
+    <Outlet/>
     </>
   )
 }
